@@ -5,7 +5,11 @@ const app = getApp()
 
 Page({
   data: {
-    
+    banners:[],
+    indicatorDots:true,
+    autoplay:true,
+    interval:3000,
+    duration:1000
   },
   //事件处理函数
   // bindViewTap: function() {
@@ -19,7 +23,13 @@ Page({
      * 示例：
      * 调用接口封装方法
      */
-   
+    WXAPI.banners({
+      type:'new'
+    }).then((res)=>{
+      that.setData({
+        banners:res.data
+      })
+    })
     // if (app.globalData.userInfo) {
     //   this.setData({
     //     userInfo: app.globalData.userInfo,

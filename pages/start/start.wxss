@@ -18,3 +18,26 @@ swiper-item image {
   display: inline-block;
   overflow: hidden;
 }
+.button{
+  position:absolute;
+  bottom:240rpx;
+  left:50%;
+  margin-left:-100rpx;
+  display:inline-block;
+  width:200rpx;
+  height:70rpx;
+  line-height:70rpx;
+  border-radius:70px;
+  border:1px solid transparent;
+  outline: none;
+  background:rgba(255,255,255,0.4);
+  /* background:#79bc3e; */
+  color:green;
+  /* font-size:50rpx; */
+}
+button::after{
+  border:0;
+  border-radius: 0;
+  font-size:50rpx;
+
+}

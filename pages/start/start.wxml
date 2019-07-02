@@ -1,13 +1,13 @@
 <!--pages/start/start.wxml-->
 <view class="container">
   <view class="swiper-container">
-    <swiper class="swipre_box">
+    <swiper class="swiper_box">
       <swiper-item wx:for="{{banners}}" wx:key="id">
         <image src="{{item.picUrl}}" />
       </swiper-item>
     </swiper>
     <form bindsubmit="goToIndex" report-submit="true">
-            <button type="primary" size="mini" form-type="submit" class="weui-btn mini-btn">开始体验</button>
+            <button  size="mini" form-type="submit" class="button">开始体验</button>
           </form>
   </view>
 </view>
