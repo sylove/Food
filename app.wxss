@@ -1,2 +1,9 @@
 /**app.wxss**/
+@import "/assets/style/icon.wxss";
 
+.lt{
+  float:left;
+}
+.rt{
+  float:right;
+}

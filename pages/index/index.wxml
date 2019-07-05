@@ -9,4 +9,53 @@
       </block>
     </swiper>
   </view>
+  <view class="baseinfo">
+    <view class="info"><text>茶园店</text></view>
+    <view class="infodetail">
+      <text class="lt iconfont iconweizhi1"></text>
+      <text class="lt">重庆市南岸区</text>
+      <navigator url="../map/map" class="rt">
+        地图>
+      </navigator>
+    </view>
+    <view class="infodetail">
+      <text class="lt iconfont iconshizhong"></text>
+      <text class="lt">营业时间：</text>
+      <text class="rt">11:00-21:00</text>
+    </view>
+    <view class="infodetail">
+    <text class="lt iconfont .iconweibiaoti-"></text>
+    <text class="lt">联系电话：</text>
+    <text class="rt">17323979652</text>
+    
+    </view>
+  </view>
+  <view class="good">
+    <view class="info"><text>热门精选</text></view>
+    <view class="content">
+      <block wx:for="{{goods}}" >
+        <view class="con">
+          <view class="lt conlt">
+            <image src="{{item.pic}}" />
+          </view>
+          <view class="lt conrt" >
+            <view class="" >
+              <text class="title">{{item.name}}</text>
+              <text class="tuijian">{{item.recommendStatusStr}}</text>
+            </view>
+            <view class="mid" >
+              <text class="iconfont iconbiaoqian1"></text>
+              <text class="tip">{{item.tags}}</text>
+            </view>
+            <view class="" >
+              <text class="price">价格：</text>
+              <text class="money">{{item.originalPrice}}元/500g</text>
+            </view>
+          </view>
+          
+        </view>
+      </block>
+    </view>
+    
+  </view>
 </view>

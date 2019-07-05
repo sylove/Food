@@ -1,9 +1,11 @@
 {
   "pages": [
-    "pages/start/start",
     "pages/index/index",
-    "pages/logs/logs"
-    
+    "pages/start/start",
+    "pages/map/map",
+    "pages/logs/logs",
+    "pages/car/car",
+    "pages/classification/classification"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -12,14 +14,34 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
+    "color":"#333333",
+    "selectedColor": "#f78806",
+    "backgroundColor":"#fff",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页"
+        "text": "首页",
+        "iconPath":"/assets/images/home1.png",
+        "selectedIconPath":"/assets/images/home2.png"
+        
+      },
+      {
+        "pagePath": "pages/classification/classification",
+        "text": "分类",
+        "iconPath": "/assets/images/list1.png",
+        "selectedIconPath": "/assets/images/list2.png"
+      },
+      {
+        "pagePath": "pages/car/car",
+        "text": "购物车",
+        "iconPath": "/assets/images/car1.png",
+        "selectedIconPath": "/assets/images/car2.png"
       },
       {
         "pagePath": "pages/logs/logs",
-        "text": "日志"
+        "text": "我的",
+        "iconPath": "/assets/images/mine1.png",
+        "selectedIconPath": "/assets/images/mine2.png"
       }
     ]
   },
