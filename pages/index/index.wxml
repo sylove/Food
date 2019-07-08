@@ -26,7 +26,7 @@
     <view class="infodetail">
     <text class="lt iconfont .iconweibiaoti-"></text>
     <text class="lt">联系电话：</text>
-    <text class="rt">17323979652</text>
+    <text class="rt" catchtap="callphone">17323979652</text>
     
     </view>
   </view>

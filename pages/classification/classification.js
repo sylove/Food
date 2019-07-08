@@ -1,4 +1,5 @@
 // pages/classification/classification.js
+const WXAPI = require('../../wxapi/main')
 Page({
 
   /**
@@ -12,7 +13,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    WXAPI.goodsCategory().then((res)=>{
+      console.log(res)
+    })
   },
 
   /**

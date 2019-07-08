@@ -21,6 +21,9 @@
   border-radius: 20rpx; */
 
 }
+.good{
+  padding-bottom:40rpx;
+}
 .info{
   font-size:32rpx;
   color:#fff;
@@ -62,7 +65,7 @@
   width:90%;
   margin:0 auto;
   border-radius:10rpx;
-  box-shadow: 2rpx 2rpx 14rpx 2rpx #fed324;
+  box-shadow: 2rpx 2rpx 14rpx 2rpx #e0e0e0;
   margin-bottom:30rpx;
 }
 .lt{

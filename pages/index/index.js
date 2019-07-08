@@ -27,12 +27,17 @@ Page({
       })
     })
     WXAPI.goods({
-      recommendStatus: 1
+      categoryId: 42114
     }).then((res)=>{
       console.log(res.data)
       that.setData({
         goods: res.data
       })
+    })
+  },
+  callphone:function(){
+    wx.makePhoneCall({
+      phoneNumber:'17323979652'
     })
   }
 })

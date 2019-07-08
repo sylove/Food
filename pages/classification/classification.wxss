@@ -1,1 +1,69 @@
-/* pages/classification/classification.wxss */
+
+/* 头部 */
+.header{
+background:#faf6f0;
+padding:20rpx 0;
+}
+.header-top{
+  text-align: center;
+  font-size:32rpx;
+  color:#333;
+}
+.header-mid{
+  text-align: center;
+  font-size:28rpx;
+  color:#666;
+  margin:10rpx 0 4rpx 0;
+}
+.header-mid text{
+  margin-right:20rpx;
+}
+.header-bot{
+  margin-left:112rpx;
+  font-size:28rpx;
+  color:#999;
+}
+
+/* 内容 */
+.content{
+
+}
+/* 左边nav */
+.nav{
+  display:inline-block;
+  width:25%;
+  height:100%;
+  background:#f8f8f8;
+  /* padding-left:40rpx; */
+  text-align:center;
+  font-size:30rpx;
+  color:#666;
+}
+.title{
+  height:80rpx;
+  line-height:80rpx;
+}
+
+/* 右边的内容 */
+.con{
+  display:inline-block;
+  width:75%;
+  /* height:100%; */
+  vertical-align:top;
+}
+.con-title{
+  height:80rpx;
+  line-height:80rpx;
+  border-bottom:1px solid #f4f4f4;
+}
+.main-title{
+  
+  font-size:30rpx;
+  color:#666;
+  font-weight:bold;
+  margin:0 8rpx 0 20rpx;
+}
+.sub-title{
+  font-size:28rpx;
+  color:#999;
+}
