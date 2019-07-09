@@ -6,14 +6,34 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+      navList:[],
+      meat:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    WXAPI.goodsCategory().then((res)=>{
+    var that=this;
+    WXAPI.goodsCategory().then((res)=>{  //获取nav所需数据
+      console.log(res.data)
+      that.setData({
+        navList:res.data
+      })
+    })
+
+    WXAPI.goods({ //获取nav所需数据
+      // categoryId: 42196
+      categoryId: 41712,
+
+    }).then((res) => {
+      console.log(res.data)
+      that.setData({
+        meat: res.data
+      })
+    })
+
+    WXAPI.goodsDetail(148229).then((res)=>{
       console.log(res)
     })
   },

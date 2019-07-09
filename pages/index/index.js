@@ -27,7 +27,7 @@ Page({
       })
     })
     WXAPI.goods({
-      categoryId: 42114
+      recommendStatus: 1
     }).then((res)=>{
       console.log(res.data)
       that.setData({

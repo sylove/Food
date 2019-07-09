@@ -10,19 +10,38 @@
   </view>
   <view class="content">
     <view class="nav">
-      <view class="title">肉食</view>
-      <view class="title">素食</view>
-      <view class="title">小吃</view>
-      <view class="title">饮料</view>
+      <block wx:for="{{navList}}" wx:key="key">
+         <view class="title">{{item.name}}</view>
+      </block>
     </view>
-    <view class="con">
+    <view class="detail">
       <!-- 肉食 -->
       <view>
         <view class="con-title">
           <text class="main-title">肉食</text>
           <text class="sub-title">大家喜欢吃，才叫真的好吃！</text>
         </view>
-        
+        <view>
+          <block wx:for="{{meat}}" wx:key="{{item.id}}">
+            <view class="con" data-id="{{item.id}}" >
+              <view class="lt conlt">
+                <image src="{{item.pic}}" />
+              </view>
+              <view class="lt conrt" >
+                  <text class="title">{{item.name}}</text>
+                <view class="mid" >
+                  <text class="iconfont iconbiaoqian1"></text>
+                  <text class="tip">{{item.tags}}</text>
+                </view>
+                <view class="" >
+                  <text class="price">价格：</text>
+                  <text class="money">{{item.originalPrice}}元/500g</text>
+                </view>
+              </view>
+          
+        </view>
+          </block>
+        </view>
       </view>
     </view>
   </view>
