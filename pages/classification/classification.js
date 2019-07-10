@@ -1,4 +1,4 @@
-// pages/classification/classification.js
+
 const WXAPI = require('../../wxapi/main')
 Page({
 
@@ -7,7 +7,10 @@ Page({
    */
   data: {
       navList:[],
-      meat:[]
+      meat:[],
+      vegetarian:[],
+      snack:[],
+      drink:[]
   },
 
   /**
@@ -22,7 +25,7 @@ Page({
       })
     })
 
-    WXAPI.goods({ //获取nav所需数据
+    WXAPI.goods({ //获取肉食所需数据
       // categoryId: 42196
       categoryId: 41712,
 
@@ -33,9 +36,41 @@ Page({
       })
     })
 
-    WXAPI.goodsDetail(148229).then((res)=>{
-      console.log(res)
+    WXAPI.goods({ //获取素食所需数据
+      // categoryId: 42196
+      categoryId: 42197,
+
+    }).then((res) => {
+      console.log(res.data)
+      that.setData({
+        vegetarian: res.data
+      })
     })
+
+    WXAPI.goods({ //获取零食所需数据
+      // categoryId: 42196
+      categoryId: 42222,
+
+    }).then((res) => {
+      console.log(res.data)
+      that.setData({
+        snack: res.data
+      })
+    })
+    
+    WXAPI.goods({ //获取饮料所需数据
+      // categoryId: 42196
+      categoryId: 42223,
+
+    }).then((res) => {
+      console.log(res.data)
+      that.setData({
+        drink: res.data
+      })
+    })
+    // WXAPI.goodsDetail(148229).then((res)=>{
+    //   console.log(res)
+    // })
   },
 
   /**

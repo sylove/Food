@@ -1,8 +1,13 @@
 
 /* 头部 */
 .header{
-background:#faf6f0;
-padding:20rpx 0;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:1;
+  width:100%;
+  background:#faf6f0;
+  padding:20rpx 0;
 }
 .header-top{
   text-align: center;
@@ -30,7 +35,10 @@ padding:20rpx 0;
 }
 /* 左边nav */
 .nav{
-  display:inline-block;
+  /* display:inline-block; */
+  position:fixed;
+  top:172rpx;
+  left:0;
   width:25%;
   height:100%;
   background:#f8f8f8;
@@ -50,6 +58,8 @@ padding:20rpx 0;
   width:75%;
   /* height:100%; */
   vertical-align:top;
+  margin-left:25%;
+  margin-top:172rpx;
 }
 .con-title{
   height:80rpx;

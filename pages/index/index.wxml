@@ -33,9 +33,9 @@
   <view class="good">
     <view class="info"><text>热门精选</text></view>
     <view class="content">
-      <block wx:for="{{goods}}" >
+      <block wx:for="{{goods}}" wx:key="{{item.id}}">
         <view class="con">
-          <view class="lt conlt">
+          <!-- <view class="lt conlt">
             <image src="{{item.pic}}" />
           </view>
           <view class="lt conrt" >
@@ -51,8 +51,8 @@
               <text class="price">价格：</text>
               <text class="money">{{item.originalPrice}}元/500g</text>
             </view>
-          </view>
-          
+          </view> -->
+          <image src="{{item.pic}}" />
         </view>
       </block>
     </view>

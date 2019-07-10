@@ -16,7 +16,7 @@
     </view>
     <view class="detail">
       <!-- 肉食 -->
-      <view>
+      <view class="meat">
         <view class="con-title">
           <text class="main-title">肉食</text>
           <text class="sub-title">大家喜欢吃，才叫真的好吃！</text>
@@ -38,8 +38,88 @@
                   <text class="money">{{item.originalPrice}}元/500g</text>
                 </view>
               </view>
-          
+            </view>
+          </block>
         </view>
+      </view>
+      <!-- 素食 -->
+      <view class="meat">
+        <view class="con-title">
+          <text class="main-title">素食</text>
+          <text class="sub-title">大家喜欢吃，才叫真的好吃！</text>
+        </view>
+        <view>
+          <block wx:for="{{vegetarian}}" wx:key="{{item.id}}">
+            <view class="con" data-id="{{item.id}}" >
+              <view class="lt conlt">
+                <image src="{{item.pic}}" />
+              </view>
+              <view class="lt conrt" >
+                  <text class="title">{{item.name}}</text>
+                <view class="mid" >
+                  <text class="iconfont iconbiaoqian1"></text>
+                  <text class="tip">{{item.tags}}</text>
+                </view>
+                <view class="" >
+                  <text class="price">价格：</text>
+                  <text class="money">{{item.originalPrice}}元/500g</text>
+                </view>
+              </view>
+            </view>
+          </block>
+        </view>
+      </view>
+      <!-- 小吃 -->
+      <view class="meat">
+        <view class="con-title">
+          <text class="main-title">小吃</text>
+          <text class="sub-title">大家喜欢吃，才叫真的好吃！</text>
+        </view>
+        <view>
+          <block wx:for="{{snack}}" wx:key="{{item.id}}">
+            <view class="con" data-id="{{item.id}}" >
+              <view class="lt conlt">
+                <image src="{{item.pic}}" />
+              </view>
+              <view class="lt conrt" >
+                  <text class="title">{{item.name}}</text>
+                <view class="mid" >
+                  <text class="iconfont iconbiaoqian1"></text>
+                  <text class="tip">{{item.tags}}</text>
+                </view>
+                <view class="" >
+                  <text class="price">价格：</text>
+                  <text class="money">{{item.originalPrice}}元/碗</text>
+                </view>
+              </view>
+            </view>
+          </block>
+        </view>
+      </view>
+      <!-- 饮料 -->
+      <view class="meat">
+        <view class="con-title">
+          <text class="main-title">饮料</text>
+          <text class="sub-title">大家喜欢吃，才叫真的好吃！</text>
+        </view>
+        <view>
+          <block wx:for="{{drink}}" wx:key="{{item.id}}">
+            <view class="con" data-id="{{item.id}}" >
+              <view class="lt conlt">
+                <image src="{{item.pic}}" />
+              </view>
+              <view class="lt conrt" >
+                  <text class="title">{{item.name}}</text>
+                <view class="mid" >
+                  <text class="iconfont iconbiaoqian1"></text>
+                  <text class="tip">{{item.tags}}</text>
+                </view>
+                <view class="" >
+                  <text class="price">价格：</text>
+                  <text class="money">{{item.originalPrice}}元/瓶</text>
+                </view>
+              </view>
+            </view>
           </block>
         </view>
       </view>

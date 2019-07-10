@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/detail/detail",
     "pages/classification/classification",
     "pages/index/index",
     "pages/start/start",
@@ -15,15 +16,14 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "color":"#999",
-    "selectedColor":"#fed324",
+    "color": "#999",
+    "selectedColor": "#fed324",
     "list": [
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath":"assets/images/home1.png",
-        "selectedIconPath":"assets/images/home2.png"
-
+        "iconPath": "assets/images/home1.png",
+        "selectedIconPath": "assets/images/home2.png"
       },
       {
         "pagePath": "pages/classification/classification",
@@ -42,8 +42,13 @@
         "text": "我的",
         "iconPath": "assets/images/mine1.png",
         "selectedIconPath": "assets/images/mine2.png"
+      },
+      {
+        "pagePath": "pages/detail/detail",
+        "text": "详情页",
+        "iconPath": "assets/images/mine1.png",
+        "selectedIconPath": "assets/images/mine2.png"
       }
-      
     ]
   },
   "sitemapLocation": "sitemap.json"
