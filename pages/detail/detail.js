@@ -25,10 +25,13 @@ Page({
         content: content,
         pics: pics
       })
-      console.log(pics)
+      console.log(basicInfo)
     })
   },
-
+  reduce:function(){
+    var val=document.getElementByClassName('mid')
+    console.log(val)
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

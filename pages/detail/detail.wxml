@@ -1,8 +1,27 @@
 <view class="container">
-  <view>
+  <view class="title">{{basicInfo.name}}</view>
+  <view class="pic">
     <block wx:for="{{pics}}" wx:key="{{item.id}}">
       <image src="{{item.pic}}"></image>
     </block>
-    
   </view>
+  <!-- <view class="desc">
+    <text>{{content}}</text>
+  </view> -->
+  <view class="price">
+    <text>￥{{basicInfo.originalPrice}}</text>
+  </view>
+  <view class="content">
+    <view class="lt num">购买数量</view>
+    <view class="rt">
+      <text bindtap="reduce">-</text>
+      <text class="mid">0.5</text>
+      <text bindtap="add">+</text>
+    </view>
+  </view>
+  <view class="buy">
+    <button type="primary" size="mini" class="lt">去结算</button>
+    <button type="warn" size="mini" class="rt">加入购物车</button>
+  </view>
+
 </view>
